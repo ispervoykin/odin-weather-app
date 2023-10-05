@@ -1,7 +1,7 @@
 import "./style.scss";
 
 const apiKey = "59109672c5e44401a84104816230210";
-const apiProvider = `http://api.weatherapi.com/v1/`;
+const apiProvider = `https://api.weatherapi.com/v1/`;
 
 async function getCurrentWeatherJson(location) {
     const response = await fetch(
