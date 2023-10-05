@@ -1,0 +1,61 @@
+$side-gap: 1.5em;
+$side-font-size: 1.5rem;
+
+body {
+    background-color: rgb(221, 186, 255);
+    margin: 1rem 1rem;
+}
+
+.currentWeather {
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .leftSide,
+    .rightSide {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: $side-font-size;
+        gap: $side-gap;
+        max-width: 50vw;
+    }
+}
+
+.leftSide > *:nth-child(2) {
+    font-size: $side-font-size + 1rem;
+}
+.leftSide > *:nth-child(4) {
+    font-size: $side-font-size + 1rem;
+}
+
+.leftSide {
+    #searchCityBtn {
+        height: 2em;
+    }
+}
+.condition {
+    display: flex;
+    align-items: center;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 10px;
+}
+
+.bottom > * {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.inputPlusSearch {
+    display: flex;
+    gap: 0.5em;
+}
+
+.inputPlusSearch > * {
+    font-size: 1.2rem;
+}
